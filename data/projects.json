@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "title": "Account balance IVR",
+            "technology": "Avaya CPaaS and Spring Boot",
+            "description": "Basic IVR that lets customers check their account balance. It verifies them with their account number and password.",
+            "githubLink": "https://github.com/OneKey-Systems/cpaas_ivr"
+        },
+        {
+            "title": "Random facts bot",
+            "technology": "Avaya CPaaS and Spring Boot",
+            "description": "Bot that answers your calls or SMS with a random fact.",
+            "githubLink": "https://github.com/OneKey-Systems/cpaas_facts"
+        }
+    ]
+}

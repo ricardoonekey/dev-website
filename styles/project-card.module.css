@@ -1,0 +1,12 @@
+.cardHeader h4{
+    margin: 5px 0 0 0;
+}
+
+.cardHeader h5 {
+    margin: 0 0 10px 0;
+}
+
+.cardFooter {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
