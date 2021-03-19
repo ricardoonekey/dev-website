@@ -6,12 +6,12 @@ const styles = {
   grommetStyle: {
     "background": "linear-gradient(180deg, rgba(125,76,219,1) 0%, rgba(128,203,196,1) 100%)",
     "display": "flex",
-    "flex-direction": "column",
-    "min-height": "100%"
+    "flexDirection": "column",
+    "minHeight": "100%"
   },
   footerStyle: {
     "background": "transparent",
-    "justify-content": "center",
+    "justifyContent": "center",
   }
 }
 

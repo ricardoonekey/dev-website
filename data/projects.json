@@ -4,6 +4,7 @@
             "title": "Account balance IVR",
             "technology": "Avaya CPaaS and Spring Boot",
             "description": "Basic IVR that lets customers check their account balance. It verifies them with their account number and password.",
+            "link": "/projects/account-balance-ivr",
             "githubLink": "https://github.com/OneKey-Systems/cpaas_ivr"
         },
         {

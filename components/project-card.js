@@ -17,7 +17,7 @@ export default function ProjectCard(props) {
             <CardFooter className={styles.cardFooter}>
                 {
                     props.link !== undefined ? <Link href={props.link}>
-                        <Button primary label="Try it"/>
+                        <Button secondary label="More"/>
                     </Link> : <React.Fragment/>
                 }
                 <a href={props.githubLink} target="_blank">
