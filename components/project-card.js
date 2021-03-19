@@ -20,7 +20,7 @@ export default function ProjectCard(props) {
                         <Button primary label="Try it"/>
                     </Link> : <React.Fragment/>
                 }
-                <a href={props.githubLink} target="_blank">
+                <a href={props.githubLink} rel="noopener noreferrer" target="_blank">
                     <Button>
                         <Github/>
                     </Button>
