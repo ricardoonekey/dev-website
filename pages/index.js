@@ -22,6 +22,8 @@ export default function Home({ data }) {
     <React.Fragment>
       <Head>
         <title>Devs @ OneKey</title>
+        <meta name="description" content="Showcase of multiple software projects which mainly focus on communications solutions. 
+        Projects use technology like Avaya CPaaS."/>
       </Head>
       <Main>
         <Box className={styles.titleContainer}>
@@ -31,14 +33,15 @@ export default function Home({ data }) {
             </Heading>
           </Box>
           <Box align="center" pad={{"vertical": "small", "horizontal": "large"}}>
-            <Paragraph textAlign="center">
+            <Heading level={2} size="small" textAlign="center">
               We built this website to share our projects/tests with the community.
               Feel free to check them out and share any feedback/comments, we'd love to
               hear from you!
-            </Paragraph>
+            </Heading>
           </Box>
         </Box>
         <Box pad={{"vertical": "small", "horizontal": "large"}}>
+          <Heading color="light-1" size="large" level={3}>Projects</Heading>
           {data.projects.map(project => (
             <ProjectCard key={project.title} {...project}/>
           ))}
