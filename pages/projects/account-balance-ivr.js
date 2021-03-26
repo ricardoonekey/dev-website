@@ -5,7 +5,7 @@ import axios from 'axios'
 export async function getServerSideProps(context) {
     let data;
     try {
-        data = await (await axios.get(process.env.ACCNT_IVR_SRVR + "/rest/accot/balance")).data
+        data = await (await axios.get(process.env.ACCNT_IVR_SRVR + "/rest/account/balance")).data
         
     } catch(error) {
         if(error.response === undefined) {
@@ -25,9 +25,10 @@ export async function getServerSideProps(context) {
 export default function Ivr({data}) {
     return (
         <React.Fragment>
-            <Main>
+            <Main direction="row" justify="center">
                 <Box>
-                    
+                    <Heading level={1}>Account Balance IVR</Heading>
+                    <Heading level={2}>Let your customers check their account balance automatically with an IVR</Heading>
                 </Box>
                 <Box background="light-2" margin="small">
                     <Table>
@@ -41,7 +42,7 @@ export default function Ivr({data}) {
                         <TableBody>
                             {('error' in data) ? <Heading level={4}>{data.error}</Heading> :
                                 data.map(entry => (
-                                    <TableRow>
+                                    <TableRow key={entry.id}>
                                         <TableCell>{entry.number}</TableCell>
                                         <TableCell>{entry.nip}</TableCell>
                                         <TableCell>{entry.balance}</TableCell>
